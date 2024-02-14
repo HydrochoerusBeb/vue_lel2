@@ -2,13 +2,13 @@
   "name": "vue-project",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "dev": "vite",
+    "format": "prettier --write src/",
+    "gh-pages": "vue-cli-service gh-pages",
+    "preview": "vite preview"
   },
   "dependencies": {
     "vue": "^3.4.15",
@@ -21,6 +21,8 @@
     "eslint": "^8.49.0",
     "eslint-plugin-vue": "^9.17.0",
     "prettier": "^3.0.3",
-    "vite": "^5.0.11"
-  }
+    "vite": "^5.0.11",
+    "vue-cli-plugin-gh-pages": "~2.0.0"
+  },
+  "type": "module"
 }
